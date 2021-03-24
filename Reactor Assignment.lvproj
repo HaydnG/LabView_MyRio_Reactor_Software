@@ -24,18 +24,14 @@
 			<Item Name="Documentation Images" Type="Folder">
 				<Item Name="myRIO_Project_Diagram.gif" Type="Document" URL="../documentation/myRIO_Project_Diagram.gif"/>
 			</Item>
+			<Item Name="ArrayBundlesToDisplay.vi" Type="VI" URL="../ArrayBundlesToDisplay.vi"/>
+			<Item Name="BubbleSort.vi" Type="VI" URL="../../../../Downloads/BubbleSort.vi"/>
 			<Item Name="Central.vi" Type="VI" URL="../Central.vi"/>
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
+			<Item Name="Swap.vi" Type="VI" URL="../../../../Downloads/Swap.vi"/>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
-				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
-				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
-			</Item>
-			<Item Name="ListBox XControl.xctl" Type="XControl" URL="../../../../Desktop/New folder (2)/Selectable ListBox xControl/ListBox XControl.xctl"/>
-			<Item Name="Toggle Symbol.vi" Type="VI" URL="../../../../Desktop/New folder (2)/Selectable ListBox xControl/SubVIs/Toggle Symbol.vi"/>
-		</Item>
+		<Item Name="System Clock.ctl" Type="VI" URL="../System Clock.ctl"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="M14" Type="RT myRIO">
