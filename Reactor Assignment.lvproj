@@ -21,26 +21,55 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Project Documentation" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Documentation Images" Type="Folder">
 				<Item Name="myRIO_Project_Diagram.gif" Type="Document" URL="../documentation/myRIO_Project_Diagram.gif"/>
 			</Item>
+		</Item>
+		<Item Name="Sub Vis" Type="Folder">
 			<Item Name="ArrayBundlesToDisplay.vi" Type="VI" URL="../ArrayBundlesToDisplay.vi"/>
-			<Item Name="BubbleSort.vi" Type="VI" URL="../../../../Downloads/BubbleSort.vi"/>
+			<Item Name="BubbleSort.vi" Type="VI" URL="../BubbleSort.vi"/>
 			<Item Name="BundleToString.vi" Type="VI" URL="../BundleToString.vi"/>
-			<Item Name="Central.vi" Type="VI" URL="../Central.vi"/>
+			<Item Name="button.vi" Type="VI" URL="../button.vi"/>
+			<Item Name="CalcSliderProgress.vi" Type="VI" URL="../CalcSliderProgress.vi"/>
 			<Item Name="GetNextScheduledSlot.vi" Type="VI" URL="../GetNextScheduledSlot.vi"/>
 			<Item Name="GetTimeOnly.vi" Type="VI" URL="../GetTimeOnly.vi"/>
 			<Item Name="IndexAndUnbundle.vi" Type="VI" URL="../IndexAndUnbundle.vi"/>
-			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 			<Item Name="parseUDPrequest.vi" Type="VI" URL="../parseUDPrequest.vi"/>
 			<Item Name="SendValue2000.vi" Type="VI" URL="../SendValue2000.vi"/>
 			<Item Name="SendValue2001.vi" Type="VI" URL="../SendValue2001.vi"/>
-			<Item Name="Swap.vi" Type="VI" URL="../../../../Downloads/Swap.vi"/>
+			<Item Name="Swap.vi" Type="VI" URL="../Swap.vi"/>
+			<Item Name="System Clock.ctl" Type="VI" URL="../System Clock.ctl"/>
 			<Item Name="UnbundleDatesToNumber.vi" Type="VI" URL="../UnbundleDatesToNumber.vi"/>
 		</Item>
-		<Item Name="button.vi" Type="VI" URL="../../../../Desktop/button.vi"/>
-		<Item Name="System Clock.ctl" Type="VI" URL="../System Clock.ctl"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Central.vi" Type="VI" URL="../Central.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="NI STM.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/STM/NI STM.lvlib"/>
+				<Item Name="STM Read Message (Serial).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Message (Serial).vi"/>
+				<Item Name="STM Read Message (TCP).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Message (TCP).vi"/>
+				<Item Name="STM Read Message (UDP).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Message (UDP).vi"/>
+				<Item Name="STM Read Message.vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Message.vi"/>
+				<Item Name="STM Read Meta Data (Serial Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (Serial Clst).vi"/>
+				<Item Name="STM Read Meta Data (Serial Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (Serial Ref).vi"/>
+				<Item Name="STM Read Meta Data (TCP Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (TCP Clst).vi"/>
+				<Item Name="STM Read Meta Data (TCP Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (TCP Ref).vi"/>
+				<Item Name="STM Read Meta Data (UDP Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (UDP Clst).vi"/>
+				<Item Name="STM Read Meta Data (UDP Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data (UDP Ref).vi"/>
+				<Item Name="STM Read Meta Data.vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Read Meta Data.vi"/>
+				<Item Name="stm_MetaDataElement.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_MetaDataElement.ctl"/>
+				<Item Name="stm_Serial Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_Serial Connection Info.ctl"/>
+				<Item Name="stm_Serial Data Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_Serial Data Info.ctl"/>
+				<Item Name="stm_Serial Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_Serial Read Options.ctl"/>
+				<Item Name="stm_TCP Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_TCP Connection Info.ctl"/>
+				<Item Name="stm_TCP Data Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_TCP Data Info.ctl"/>
+				<Item Name="stm_TCP Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_TCP Read Options.ctl"/>
+				<Item Name="stm_UDP Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_UDP Connection Info.ctl"/>
+				<Item Name="stm_UDP Data Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_UDP Data Info.ctl"/>
+				<Item Name="stm_UDP Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_UDP Read Options.ctl"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="M14" Type="RT myRIO">
@@ -125,7 +154,7 @@ AddOutputFilter chunkFilter
 		<Item Name="calcDistance.vi" Type="VI" URL="../calcDistance.vi"/>
 		<Item Name="globals.vi" Type="VI" URL="../globals.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="Toggle.vi" Type="VI" URL="../../../../Downloads/Toggle.vi"/>
+		<Item Name="Toggle.vi" Type="VI" URL="../Toggle.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Accelerometer Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/Accelerometer/typedefs/Accelerometer Channels Enum.ctl"/>
@@ -167,6 +196,12 @@ AddOutputFilter chunkFilter
 				<Item Name="Generic IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ Array.ctl"/>
 				<Item Name="Generic IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Generic IRQ.ctl"/>
 				<Item Name="Hardware Version Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Hardware Version Enum.ctl"/>
+				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
+				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
+				<Item Name="IMAQ Flatten Image Options" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Flatten Image Options"/>
+				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
+				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
 				<Item Name="IO Config FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/Resource Manager/typedefs/IO Config FPGA Reference.ctl"/>
 				<Item Name="IO IRQ Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/IO IRQ Channels Enum.ctl"/>
 				<Item Name="IO Manager.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/IO Manager.vi"/>
@@ -226,6 +261,8 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.1 Open.vi"/>
 				<Item Name="myRIO v1.1 PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/myRIO v1.1 PWM Channels Enum.ctl"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
+				<Item Name="NI STM.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/STM/NI STM.lvlib"/>
+				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
 				<Item Name="PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels Enum.ctl"/>
 				<Item Name="PWM Channels FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels FPGA Reference.ctl"/>
@@ -253,7 +290,28 @@ AddOutputFilter chunkFilter
 				<Item Name="roboRIO v1.0 Read DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/DIO/vis/roboRIO v1.0 Read DIO.vi"/>
 				<Item Name="roboRIO v1.0 Write DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/DIO/vis/roboRIO v1.0 Write DIO.vi"/>
 				<Item Name="roboRIO v1.0 Write PWM.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/PWM/vis/roboRIO v1.0 Write PWM.vi"/>
+				<Item Name="STM Write Message (Serial).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Message (Serial).vi"/>
+				<Item Name="STM Write Message (TCP).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Message (TCP).vi"/>
+				<Item Name="STM Write Message (UDP).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Message (UDP).vi"/>
+				<Item Name="STM Write Message.vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Message.vi"/>
+				<Item Name="STM Write Meta Data (Serial Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (Serial Clst).vi"/>
+				<Item Name="STM Write Meta Data (Serial Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (Serial Ref).vi"/>
+				<Item Name="STM Write Meta Data (TCP Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (TCP Clst).vi"/>
+				<Item Name="STM Write Meta Data (TCP Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (TCP Ref).vi"/>
+				<Item Name="STM Write Meta Data (UDP Clst).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (UDP Clst).vi"/>
+				<Item Name="STM Write Meta Data (UDP Ref).vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data (UDP Ref).vi"/>
+				<Item Name="STM Write Meta Data.vi" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/STM Write Meta Data.vi"/>
+				<Item Name="stm_MetaDataElement.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_MetaDataElement.ctl"/>
+				<Item Name="stm_Serial Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_Serial Connection Info.ctl"/>
+				<Item Name="stm_Serial Write Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_Serial Write Options.ctl"/>
+				<Item Name="stm_TCP Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_TCP Connection Info.ctl"/>
+				<Item Name="stm_TCP Write Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_TCP Write Options.ctl"/>
+				<Item Name="stm_UDP Connection Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_UDP Connection Info.ctl"/>
+				<Item Name="stm_UDP Write Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/STM/compatibility/stm_UDP Write Options.ctl"/>
 				<Item Name="System FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/System/typedefs/System FPGA Reference.ctl"/>
+				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
+				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
+				<Item Name="TCP Listen.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen.vi"/>
 				<Item Name="Timer IRQ Array.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ Array.ctl"/>
 				<Item Name="Timer IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ FPGA Reference.ctl"/>
 				<Item Name="Timer IRQ.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Timer IRQ.ctl"/>
@@ -265,6 +323,12 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="parseUDPrequest.vi" Type="VI" URL="../parseUDPrequest.vi"/>
